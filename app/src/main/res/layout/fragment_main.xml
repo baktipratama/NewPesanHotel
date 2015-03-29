@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/backmain"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pesan Hotel"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp" />
+
+        <EditText
+            android:id="@+id/etData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:ems="10"
+            android:hint="Kota, Hotel, Kata kunci"
+            android:textColor="#00ff00"
+            android:textColorHint="#FFFFFF" >
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/etFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="0.7"
+                android:ems="10"
+                android:hint="Start Date"
+                android:textColor="#00ff00"
+                android:textColorHint="#FFFFFF" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/etTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="0.7"
+                android:ems="10"
+                android:hint="End Date"
+                android:textColor="#00ff00"
+                android:textColorHint="#FFFFFF" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/etRoomNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="0.7"
+                android:ems="10"
+                android:hint="Jumlah Kamar"
+                android:inputType="number"
+                android:textColor="#00ff00"
+                android:textColorHint="#FFFFFF" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/etPerson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="0.7"
+                android:ems="10"
+                android:hint="Jumlah Orang"
+                android:textColor="#00ff00"
+                android:inputType="number"
+                android:textColorHint="#FFFFFF" >
+            </EditText>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:textColor="#000000" />
+    </LinearLayout>
+</LinearLayout>
